@@ -13,3 +13,18 @@
 
 // 4. Crea un arreglo de numero en rango del 1-1000 en pasos de 5 en 5
     var v = Range(1,1000,5)
+    
+    // 5. Cuales son los elementos unicos de la lista Lista(1,3,3,4,6,7,3,7) utilice conversion a conjuntos
+    var l = List(1,3,3,4,6,7,3,7)
+    l.toSet
+
+
+// 6. Crea una mapa mutable llamado nombres que contenga los siguiente
+//     "Jose", 20, "Luis", 24, "Ana", 23, "Susana", "27"
+    var map=collection.mutable.Map(("Jose", 20),("Luis", 24),("Ana", 23),("Susana", "27"))
+// 6 a . Imprime todas la llaves del mapa
+    map.keys
+
+
+// 7 b . Agrega el siguiente valor al mapa("Miguel", 23)
+    map += ("Miguel"->23)
