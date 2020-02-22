@@ -32,3 +32,35 @@ if (n<2)
 }
 
 println(fibonacci1(n))
+
+
+
+//fibonacci loop
+def fib2( n : Int ) : Int = {
+  var a = 0
+  var b = 1
+  var i = 0	  
+ 
+  while( i < n ) {
+    val c = a + b
+    a = b
+    b = c
+    i = i + 1
+  } 
+  return a
+}
+println(fib2(n))
+
+
+
+
+
+//fibonnaci so-called tail-recursion
+def fib3( n : Int) : Int = { 
+  def fib_tail( n: Int, a:Int, b:Int): Int = n match {
+    case 0 => a 
+    case _ => fib_tail( n-1, b, a+b )
+  }
+  return fib_tail( n, 0, 1)
+}
+println(fib3(n))
