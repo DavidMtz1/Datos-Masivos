@@ -34,6 +34,7 @@ mensaje.slice(5,9)
 
 //5. Cual es la diferencia en value y una variable en scala?
 //Cuando se utiliza value despues de haberlo declarado no se puede cambiar ya que este es inmutable.
+//Una variable puede ser cambiada despues de haber sido declarada ya que esta es mutable.
 
 
 //6. Dada la tupla ((2,4,5),(1,2,3),(3.1416,23))) regresa el numero 3.1416 
