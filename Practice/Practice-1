@@ -26,3 +26,15 @@ Prime(13)
 //   imprimir "Estoy ecribiendo un tweet"
 var bird="tweet"
 printf(s"Estoy ecribiendo un %s",bird)
+
+//4. Dada la variable mensaje = "Hola Luke yo soy tu padre!" utiliza slilce para extraer la
+//   secuencia "Luke"
+var mensaje = "Hola Luke yo soy tu padre!"
+mensaje.slice(5,9)
+
+//5. Cual es la diferencia en value y una variable en scala?
+
+
+//6. Dada la tupla ((2,4,5),(1,2,3),(3.1416,23))) regresa el numero 3.1416 
+var t = ((2,4,5),(1,2,3),(3.1416,23))
+t._3._1
