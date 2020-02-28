@@ -1,0 +1,47 @@
+The variance serves to identify the mean of the quadratic deviations of a random variable,
+considering the average value of it.
+
+Simply put, we will define whether our generic type will include its sub-types and the way in which it will.
+
+Co-variance or covariance describes the flexibility in which one type can be considered a sub-type of another type in a generic definition.
+
+Counter-variance or counter-variance is the opposite of covariance because it defines the flexibility of making a type, sub-type of its sub-type by the relationship that exists between them (example here).
+
+And of course there is also the in-variance or invariance, which is not flexible and that limits the variance between types since if we define a generic class or trait as invariant then we will not include its sub-types in any way acting rigidly In the definition.
+
+
+
+Parameters:
++ indicates covariance
+- indicates countervariance
+if not indicated, there is invariance in the type
+
+Whereby:
+
++A indicates that the instantiated type must be type A itself or a subtype of A
+-A indicates that the instantiated type must be type A itself or a supertype of A
+ A indicates that the instantiated type must be type A itself
+
+	Examples:
+
+			abstract class Sequence[+A] {
+				def append(x: Sequence[A]): Sequence[A]
+					// **** error: illegal variance:
+					// ‘A’ occurs in contravariant position.
+			}
+
+		Falla porque "append" fuerza al supertipo A
+
+		Para corregirlo:
+
+			abstract class Sequence[+A] {
+				def append[B >: A](x: Sequence[B]): Sequence[B]
+			}
+
+		Funciona porque "append" admite cualquier subtipo de A (que corresponde con +A).
+
+		Un ejemplo de contravarianza:
+
+			abstract class OutputChannel[-A]	{
+				def write(x: A): Unit
+			}
