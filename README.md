@@ -175,7 +175,7 @@ println(fib3(n))
 ```
 
 ### Four Practice
-*Pearson Correlation Research*
+**Pearson Correlation Research**
 
 The Pearson Correlation Coefficient is a measure of the correspondence or linear relationship between two random quantitative variables. In simpler words it can be defined as an index used to measure the degree of relationship that two variables have, both quantitative.
 
@@ -199,14 +199,19 @@ And of course there is also the in-variance or invariance, which is not flexible
 
 Parameters:
 + indicates covariance
+
 - indicates countervariance
+
 if not indicated, there is invariance in the type
 
 Whereby:
 
 +A indicates that the instantiated type must be type A itself or a subtype of A
+
 -A indicates that the instantiated type must be type A itself or a supertype of A
+
  A indicates that the instantiated type must be type A itself
+ 
  
  Examples:
  
