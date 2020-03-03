@@ -175,7 +175,7 @@ println(fib3(n))
 ```
 
 ### Four Practice
-# Pearson Correlation Research #
+*Pearson Correlation Research*
 
 The Pearson Correlation Coefficient is a measure of the correspondence or linear relationship between two random quantitative variables. In simpler words it can be defined as an index used to measure the degree of relationship that two variables have, both quantitative.
 
@@ -209,26 +209,32 @@ Whereby:
  A indicates that the instantiated type must be type A itself
  
  Examples:
-    ```
+ 
+```
     abstract class Sequence[+A] {
                 def append(x: Sequence[A]): Sequence[A]
                     // **** error: illegal variance:
                     // 'A' occurs in contravariant position.
             }
-    ```
+```
+    
 It fails because "append" forces supertype A
 To correct it:
+
         
-        ```abstract class Sequence[+A] {
+```
+abstract class Sequence[+A] {
                 def append[B >: A](x: Sequence[B]): Sequence[B]
             }
-    ```
+```
+    
 It works because "append" supports any subtype of A (which corresponds to + A).
          An example of countervariance:
-        ```
- abstract class OutputChannel[-A]    {
+         
+```
+        abstract class OutputChannel[-A]    {
                 def write(x: A): Unit
             }
-        ```
+```
 
 
