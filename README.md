@@ -4,6 +4,10 @@
 - [First Practice](#first-practice)
 - [Second Practice (List)](#second-practice)
 - [Third Practice (Fibonnacci)](#third-practice)
+- [Four Practice](#four-practice)
+- [Five Practice](#five-practice)
+- [Six Practice](#six-practice)
+- [Seven Practice](#seven-practice)
 
 ### First Practice
 
@@ -169,3 +173,62 @@ def fib3( n : Int) : Int = {
 }
 println(fib3(n))
 ```
+
+### Four Practice
+# Pearson Correlation Research #
+
+The Pearson Correlation Coefficient is a measure of the correspondence or linear relationship between two random quantitative variables. In simpler words it can be defined as an index used to measure the degree of relationship that two variables have, both quantitative.
+
+Having two variables, the correlation facilitates estimates of the value of one of them, with knowledge of the value of the other variable.
+This coefficient is a measure that indicates the relative situation of the events with respect to the two variables, that is, it represents the numerical expression that indicates the degree of correspondence or relationship that exists between the 2 variables. These numbers vary between limits of +1 and -1.
+
+### Five Practice
+
+### Six Practice
+
+### Seven Practice
+
+The variance serves to identify the mean of the quadratic deviations of a random variable,
+considering the average value of it.
+
+Simply put, we will define whether our generic type will include its sub-types and the way in which it will.Co-variance or covariance describes the flexibility in which one type can be considered a sub-type of another type in a generic definition.
+
+Counter-variance or counter-variance is the opposite of covariance because it defines the flexibility of making a type, sub-type of its sub-type by the relationship that exists between them (example here).
+
+And of course there is also the in-variance or invariance, which is not flexible and that limits the variance between types since if we define a generic class or trait as invariant then we will not include its sub-types in any way acting rigidly In the definition.
+
+Parameters:
++ indicates covariance
+- indicates countervariance
+if not indicated, there is invariance in the type
+
+Whereby:
+
++A indicates that the instantiated type must be type A itself or a subtype of A
+-A indicates that the instantiated type must be type A itself or a supertype of A
+ A indicates that the instantiated type must be type A itself
+ 
+ Examples:
+    ```
+    abstract class Sequence[+A] {
+                def append(x: Sequence[A]): Sequence[A]
+                    // **** error: illegal variance:
+                    // 'A' occurs in contravariant position.
+            }
+    ```
+It fails because "append" forces supertype A
+To correct it:
+        
+        ```abstract class Sequence[+A] {
+                def append[B >: A](x: Sequence[B]): Sequence[B]
+            }
+    ```
+It works because "append" supports any subtype of A (which corresponds to + A).
+         An example of countervariance:
+        ```
+ abstract class OutputChannel[-A]    {
+                def write(x: A): Unit
+            }
+        ```
+
+
