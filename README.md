@@ -420,7 +420,7 @@ It works because "append" supports any subtype of A (which corresponds to + A).
             }
 ```
 
-###Exam
+### Exam
 
 Given a square matrix, find the absolute difference between the sums of its diagonals.
 
