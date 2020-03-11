@@ -8,6 +8,7 @@
 - [Five Practice (20 Functions Sales.csv](#five-practice)
 - [Six Practice (20 Functions P2-Mispriced-Diamonds.csv)](#six-practice)
 - [Seven Practice](#seven-practice)
+- [Exam](#exam)
 
 ### First Practice
 
@@ -419,4 +420,22 @@ It works because "append" supports any subtype of A (which corresponds to + A).
             }
 ```
 
+###Exam
 
+Given a square matrix, find the absolute difference between the sums of its diagonals.
+
+Develop a function called diagionalDifference in a scrip with the Scala programming language. 
+This should return the integer that represents the difference from the absolute diagonal.
+```
+def diagonalDifference() = {
+
+  val arr = ((11,2,4),(4,5,6),(10,8,-12))
+
+  var diagonal_1 = arr._1._1 + arr._2._2 + arr._3._3
+  var diagonal_2 = arr._1._3 + arr._2._2 + arr._3._1
+
+  var diferenciaAbsolota = (diagonal_1-diagonal_2)
+  var result = math.abs(diferenciaAbsolota)
+  println(result)
+}
+```
