@@ -1,0 +1,42 @@
+//1. Desarrollar un algoritmo en scala que calcule el radio de un circulo
+var a=3
+var r=math.sqrt(a/math.Pi)
+
+//2. Desarrollar un algoritmo en scala que me diga si un numero es primo
+def Prime(n:Int):Boolean={
+    if(n%2==0){
+        return false
+    }
+    else{
+        for(i <- Range(3,n)){
+            if(n%i==0){
+                return false
+            }
+        }
+        return true                
+    }
+}
+Prime(2)
+Prime(4)
+Prime(7)
+Prime(13)
+
+
+//3. Dada la variable bird = "tweet", utiliza interpolacion de string para
+//   imprimir "Estoy ecribiendo un tweet"
+var bird="tweet"
+printf(s"Estoy ecribiendo un %s",bird)
+
+//4. Dada la variable mensaje = "Hola Luke yo soy tu padre!" utiliza slilce para extraer la
+//   secuencia "Luke"
+var mensaje = "Hola Luke yo soy tu padre!"
+mensaje.slice(5,9)
+
+//5. Cual es la diferencia en value y una variable en scala?
+//Cuando se utiliza value despues de haberlo declarado no se puede cambiar ya que este es inmutable.
+//Una variable puede ser cambiada despues de haber sido declarada ya que esta es mutable.
+
+
+//6. Dada la tupla ((2,4,5),(1,2,3),(3.1416,23))) regresa el numero 3.1416 
+var t = ((2,4,5),(1,2,3),(3.1416,23))
+t._3._1
