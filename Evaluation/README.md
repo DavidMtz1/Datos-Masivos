@@ -29,6 +29,7 @@ val df = spark.read.option("header","true").option("inferSchema","true").format(
 ```
 df.show()
 ```
+![Alt text](images/df.show().png "Columns")
 
 > 6. Seleccione las siguientes columnas: Fres, Milk, Grocery, Frozen, Detergents_Paper,Delicassen y llamar a este conjunto feature_data
 ```
@@ -37,6 +38,7 @@ val feature_data = df.select($"Fresh", $"Milk", $"Grocery", $"Frozen", $"Deterge
 ```
 feature_data.show()
 ```
+![Alt text](images/df.show().png "Feature Data")
 
 > 7. Importar Vector Assembler y Vectors
 ```
