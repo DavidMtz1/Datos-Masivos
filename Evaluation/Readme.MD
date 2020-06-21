@@ -152,12 +152,17 @@ val duration = (System.nanoTime - t1) / 1e9d
 ```
 **Tables
 
-![Alt text](images/Multilayertable.png "Algorithm table Multileyer Perceptron")
+![Alt text](images/Multileyertable.png "Algorithm table Multileyer Perceptron")
 ![Alt text](images/Decisiontable.png "Algorithm table Decision tree")
 ![Alt text](images/SVMtable.png "Algorithm table SVM")
+![Alt text](images/Logistictable.png "Algorithm table SVM")
 
 ### Conclusion
+Analyzing our results with respect to the 4 models used, we were able to conclude that the decision tree is more effective since it gave us 89% precision in the results obtained.
 
+Logistic regression was the model that resulted in the least execution time, followed by Perceptron multilayer, and we could see that the SVM model takes the longest time to execute.
+
+In order to make a decision about which model is really the best, it would be a somewhat difficult decision to make since 3 of the models present a very similar percentage of precision.
 
 ### References
 
