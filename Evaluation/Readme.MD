@@ -19,7 +19,7 @@
 Support Vector Machines is a supervised learning algorithm that can be used for binary classification or regression.
 In both cases, this resolution is based on a first phase of training and a second phase of use for problem solving, they need to first train with situations in which they are told the correct answer on many examples, and once she has trained, enters the "use" phase, and simply becomes a box that returns the response to a new case
 
-![Alt text](images/SVM).png "SVM")
+![Alt text](images/SVM.png "SVM")
 
 
 Optimal classification is done by maximizing the margin of separation between classes. The vectors that define the edge of this gap are the support vectors. In the event that the classes are not linearly separable, we can use the kernel trick to add a new dimension where they are.
@@ -39,7 +39,7 @@ A decision tree is a flowchart like the tree structure, where each internal node
 The decision tree is a supervised machine learning technique to induce a decision tree from the training data, it is a predictive model, a mapping from observations on an element to conclusions about its objective value. In tree structures, leaves represent classifications (also called labels), leafless nodes are characteristics, and branches represent conjunctions of characteristics that lead to classifications
 DTs are classified using a hierarchical set of characteristics decisions. The decisions made in the internal nodes are the divided criteria, each sheet is assigned to a class or its probability.
 
-![Alt text](images/Decisiontree).png "Decision Tree")
+![Alt text](images/Decisiontree.png "Decision Tree")
 
 ### Logistic Regression
 
@@ -48,12 +48,12 @@ It is used to describe data and explain the relationship between a dependent bin
 Unlike linear regression, in logistic regression, the required output is represented in discrete values ​​as binary 0 and 1
 Estimate the relationship between a dependent variable (target) and one or more independent variables (predictors) where the dependent variable is categorical / nominal.
 
-![Alt text](images/Logisticregression).png "Logistic Regression")
+![Alt text](images/Logisticregression.png "Logistic Regression")
 
 Example:
 A linear model classifies tumors as malignant (1) or benign (0) given their size. The lines show the prediction of the linear model. For the data on the left, we can use 0.5 as the classification threshold. After introducing a few more cases of malignant tumors, the regression line changes and a threshold of 0.5 no longer separates the classes. Points are slightly altered to reduce excessive tracing.
 
-![Alt text](images/Logisticregression2).png "Example Logistic Regression")
+![Alt text](images/Logisticregression2.png "Example Logistic Regression")
 
 Logistic regression types
  + Binary logistic regression
@@ -69,12 +69,12 @@ A multilayer perceptron (MLP) is a direct-feed artificial neural network that ge
 Each node, apart from the input nodes, has a nonlinear activation function. An MLP uses backward propagation as a supervised learning technique. Since there are multiple layers of neurons,
 MLP is a deep learning technique, it is widely used to solve problems that require supervised learning, as well as research in computational neuroscience and parallel distributed processing. Applications include voice recognition, image recognition, and machine translation.
 
-![Alt text](images/Multilayerperceptron1).png "Multilayer Perceptron")
+![Alt text](images/Multilayerperceptron1.png "Multilayer Perceptron")
 
 Example:
 We have buildings and pedestrians become points now. Red dots represent objects on the left side of the street; the green dots represent those on the right. The street becomes discontinuous and continuous lines.
 
-![Alt text](images/Miltilayerperceptron2).png "Example og Multilayer Perceptron")
+![Alt text](images/Miltilayerperceptron2.png "Example og Multilayer Perceptron")
 
 Support Vector Machine (the "road machine") is responsible for finding the decision limit to separate the different classes and maximize the margin.
 The margins are the distances (perpendicular) between the line and the points closest to the line.
@@ -87,11 +87,11 @@ Within the world of Big Data, there is talk of Scala since Spark, which is one o
 What is Spark?
 Apache Spark is an open-source cluster computing framework. Spark is made with Scala and is responsible for transforming the data into an element called RDD (Resilient Distributed Dataset). This is an immutable array that is processed using maps and reduce.
 
-![Alt text](images/spark).jpg "Spark and Scala")
+![Alt text](images/spark.jpg "Spark and Scala")
 
 As a code editor we use visual studio, this is quite simple to use and interactive.
 
-![Alt text](images/visual).jpg "Visual Studio Code")
+![Alt text](images/visual.jpg "Visual Studio Code")
 
 ### Results
 
@@ -152,9 +152,9 @@ val duration = (System.nanoTime - t1) / 1e9d
 ```
 **Tables
 
-![Alt text](images/Multilayertable).png "Algorithm table Multileyer Perceptron")
-![Alt text](images/Decisiontable).png "Algorithm table Decision tree")
-![Alt text](images/SVMtable).png "Algorithm table SVM")
+![Alt text](images/Multilayertable.png "Algorithm table Multileyer Perceptron")
+![Alt text](images/Decisiontable.png "Algorithm table Decision tree")
+![Alt text](images/SVMtable.png "Algorithm table SVM")
 
 ### Conclusion
 
