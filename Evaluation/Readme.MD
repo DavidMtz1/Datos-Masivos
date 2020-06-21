@@ -87,11 +87,11 @@ Within the world of Big Data, there is talk of Scala since Spark, which is one o
 What is Spark?
 Apache Spark is an open-source cluster computing framework. Spark is made with Scala and is responsible for transforming the data into an element called RDD (Resilient Distributed Dataset). This is an immutable array that is processed using maps and reduce.
 
-![Alt text](images/spark).png "Spark and Scala")
+![Alt text](images/spark).jpg "Spark and Scala")
 
 As a code editor we use visual studio, this is quite simple to use and interactive.
 
-![Alt text](images/visual).png "Visual Studio Code")
+![Alt text](images/visual).jpg "Visual Studio Code")
 
 ### Results
 
